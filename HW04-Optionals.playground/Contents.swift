@@ -1,6 +1,5 @@
 
 // #1
-
 let firstString  = "555"
 let secondString = "and"
 let thirdString  = "1000"
@@ -41,11 +40,7 @@ if Int(fifthString) != nil {
 
 print("Sum of strings, could be converted to an integer = \(sumOfStrings)")
 
-
 // #2
-
-//var statusTuple : (Int, String?, String?) = (statusCode:216 , message:"It's OK!", errorMessage:nil)
-
 var statusTuple : (statusCode: Int, message: String?, errorMessage: String?)
 statusTuple = (216, "It's OK!", nil)
 
@@ -63,12 +58,7 @@ if statusTuple.1 != nil {
     print(statusTuple.2!)
 }
 
-
 // #3
-
-//var firstStudent = (name : String!, carNumber : Int?, examResult: Int?)
-//var firstStudent : (String!, Int?, Int?)
-
 typealias StudentTuple = (name: String, carNumber: Int?, examResult: Int?)
 
 let student1 : StudentTuple = ("Max", nil, 5)
