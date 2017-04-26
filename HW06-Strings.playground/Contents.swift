@@ -21,12 +21,10 @@ let num3 = (Int(thirdString) == nil)  ? "nil" : thirdString
 let num4 = (Int(fourthString) == nil) ? "nil" : fourthString
 let num5 = (Int(fifthString) == nil)  ? "nil" : fifthString
 
-// interpolate 
-
+// interpolate
 print("\(num1) + \(num2) + \(num3) + \(num4) + \(num5) = \(sumOfStrings)")
 
 // concatenate
-
 var concatenate = num1
 concatenate += " + " + num2
 concatenate += " + " + num3
@@ -50,14 +48,14 @@ print("\((stringOfUnicode as NSString).length) elements in Objective-C")
 
 //#3
 let englishAlphabet = "abcdefghijklmnopqrstuvwxyz"
-let letter : Character = "c"
+let letter : Character = "m"
 var i = 0
 
 for temp in englishAlphabet.characters {
 
     if temp == letter {
         
-        print("Letter '\(letter)' number in alphabet is \(i)")
+        print("Letter '\(letter)' number in alphabet is \(i + 1)")
         
     }
     i += 1
