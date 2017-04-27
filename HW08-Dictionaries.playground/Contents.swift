@@ -25,10 +25,12 @@ print("Average score of students is \(averageScore)")
 // #2
 let daysOfMonth = ["January" : 31, "February" : 28, "March" : 31, "April" : 30, "May" : 31, "June" : 30, "July" : 31, "August" : 31, "September" : 30, "October" : 31, "November" : 30, "December" : 31]
 
+print("\nOutput with tuple")
 for (month, days) in daysOfMonth {
     print("\(month) have \(days) days")
 }
 
+print("\nOutput with key-value")
 for keyMonth in daysOfMonth.keys {
     print("\(keyMonth) have \(daysOfMonth[keyMonth]!) days")
 }
@@ -42,18 +44,19 @@ let numbers = ["1", "2", "3", "4", "5", "6", "7", "8"]
 for i in 1...letters.count {
     for j in 1...numbers.count {
         var cell = letters[i - 1] + numbers[j - 1]
-        /*
-        var colorCell = ((i + j) % 2 != 0)
-        /*
-        if (i + j) % 2 == 0 {
-            colorCell = false
-        }  else {
-            colorCell = true
-        }
-        */
-        */
+        
         chessBoard [cell] = ((i + j) % 2 != 0)
     }
 }
+/*
+for (key, value) in chessBoard {
+    print("\(key) - \(value)")
+}
+*/
+let box = chessBoard ["h8"]
 
-chessBoard ["d5"]
+print("\nh8 is \(box! ? "white" : "black")")
+
+
+
+
