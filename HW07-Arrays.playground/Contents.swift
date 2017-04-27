@@ -8,6 +8,7 @@ for days in daysInMonth {
 
 let monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
+print("\n Output without tuple")
 for i in 0..<daysInMonth.count {
     print("\(monthName[i]) have \(daysInMonth[i]) days")
 }
@@ -18,9 +19,16 @@ for i in 0..<daysInMonth.count {
     monthTuple.append((monthName[i], daysInMonth[i]))
 }
 
+print("\n Output with tuple")
 for month in monthTuple {
     print("\(month.name) have \(month.days) days")
 }
+
+print("\n Reversed output with tuple")
+for month in monthTuple.reversed() {
+    print("\(month.name) have \(month.days) days")
+}
+
 
 let birthday : (name: String, days: Int) = ("December", 15)
 
@@ -47,7 +55,7 @@ for i in 0..<monthTuple.count {
 for i in 0..<temp {
     sumDays += monthTuple[i].days
 }
-print("My birthday in \(sumDays) day on the beginning of the year")
+print("\nMy birthday in \(sumDays) day on the beginning of the year \n")
 
 
 // #2
