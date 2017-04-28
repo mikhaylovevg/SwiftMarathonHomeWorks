@@ -40,14 +40,13 @@ case 18...23:
     print("student")
 case 24...60:
     print("man")
-case 61...99:
+case 61...120:
     print("old man")
 default:
     print("death")
 }
 
 // #3
-
 let student = (name : "Игорь", middleName : "Олегович", surName : "Захаров")
 
 switch student {
@@ -65,7 +64,6 @@ default:
 // #4
 let firstShip  = (x:"a", y:1, w:1, h:2)
 let secondShip = (x:"d", y:7, w:1, h:1)
-
 
 let point = ("d", 7)
 
