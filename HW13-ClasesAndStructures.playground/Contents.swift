@@ -1,7 +1,7 @@
 
 // #1
 struct StudentStruct {
-    let name : String
+    let name    : String
     let secondName : String
     let birthYear : Int
     var middleScore : Double
@@ -45,11 +45,9 @@ output(sortedByName)
 // #5
 var changedJournal = journal
 
-changedJournal[0].middleScore = 5.0
-changedJournal[1].middleScore = 5.0
-changedJournal[2].middleScore = 5.0
-changedJournal[3].middleScore = 5.0
-changedJournal[4].middleScore = 5.0
+for i in 0..<changedJournal.count {
+    changedJournal[i].middleScore = 5.0
+}
 
 print("Origin journal:")
 output(journal)
@@ -105,10 +103,9 @@ outputClass(nameSorted)
 
 let changedJournalClass = journalClass
 
-changedJournalClass[0].middleScore = 2.0
-changedJournalClass[1].middleScore = 2.0
-changedJournalClass[2].middleScore = 2.0
-changedJournalClass[3].middleScore = 2.0
+for student in changedJournalClass {
+    student.middleScore = 2.0
+}
 
 print("Origin journal:")
 outputClass(journalClass)
